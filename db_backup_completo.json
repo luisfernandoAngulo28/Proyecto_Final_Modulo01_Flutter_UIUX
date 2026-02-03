@@ -1,0 +1,763 @@
+{
+    "categories": [
+        {
+            "id": 1,
+            "name": "calzado",
+            "products": [
+                {
+                    "id": 1,
+                    "name": "Lápiz óptico para iPad JAMJAKE",
+                    "brand": "JAMJAKE",
+                    "description": "Lápiz óptico para iPad con rechazo de palma y carga rápida, compatible con Apple iPad Pro, Air, Mini.",
+                    "price": 124.49,
+                    "currency": "BOB",
+                    "discount": 40,
+                    "old_price": 207.53,
+                    "colors": ["Blanco", "Negro", "Azul", "Rosado", "Púrpura", "Blanco Azul", "Blanco Rosa", "Amarillo"],
+                    "image": "https://m.media-amazon.com/images/I/414C25OyjML._AC_SX466_.jpg"
+                },
+                {
+                    "id": 2,
+                    "name": "ESR Funda para iPhone 17 Pro Max",
+                    "brand": "ESR",
+                    "description": "Funda con control de cámara, compatible con MagSafe, protección de grado militar, transparente.",
+                    "price": 55.29,
+                    "currency": "BOB",
+                    "discount": 20,
+                    "old_price": 69.13,
+                    "colors": ["transparente (A-Clear)", "B-Clear Negro", "B-Clear Shimmer", "B - negro escarchado", "B - Verde escarchado", "B - Naranja escarchada", "B - Rosa escarchado", "Azul", "Púrpura"],
+                    "image": "https://m.media-amazon.com/images/I/710LLWDdufL._AC_SX679_.jpg"
+                },
+                {
+                    "id": 3,
+                    "name": "FireNova Funda magnética para iPhone 17 Pro",
+                    "brand": "FireNova",
+                    "description": "Funda magnética compatible con MagSafe, botón de control de cámara, silicona, protección antiarañazos.",
+                    "price": 82.83,
+                    "currency": "BOB",
+                    "discount": 20,
+                    "old_price": 103.66,
+                    "colors": ["Negro", "Verde alpino", "Azul", "Calke Green", "Tiza rosado", "morado", "Rojo Profundo", "Rosa encendido", "Caqui", "Azul Klein", "Lavanda Gris", "Azul/claro", "Marrón claro", "Púrpura claro", "Lila Púrpura", "Verde medianoche", "Verde (Mint Green)", "Titanio natural", "Azul marino", "Naranja", "Arena rosa.", "Ciruela", "Azul-cielo", "Gris espacial", "Piedra", "verde azulado", "Blanco", "Amarillo"],
+                    "image": "https://m.media-amazon.com/images/I/615ZIRT8gfL._AC_SY300_SX300_QL70_FMwebp_.jpg"
+                },
+                {
+                    "id": 4,
+                    "name": "VANMASS Soporte de teléfono para automóvil",
+                    "brand": "VANMASS",
+                    "description": "Soporte de teléfono para automóvil de grado militar, succión y clip mejorados, compatible con la mayoría de teléfonos y vehículos.",
+                    "price": 179.71,
+                    "currency": "BOB",
+                    "discount": 35,
+                    "old_price": 276.73,
+                    "colors": ["Negro", "Azul", "Verde", "Púrpura", "Rojo", "Blanco"],
+                    "image": "https://m.media-amazon.com/images/I/81p1uVT98KL._AC_SX679_.jpg"
+                },
+                {
+                    "id": 5,
+                    "name": "Auriculares Bluetooth Trucker Necode",
+                    "brand": "Necode",
+                    "description": "Auriculares inalámbricos con micrófono, doble cancelación de ruido, 55 horas de trabajo.",
+                    "price": 194.04,
+                    "currency": "BOB",
+                    "discount": 15,
+                    "old_price": 228.29,
+                    "colors": ["Negro"],
+                    "image": "https://m.media-amazon.com/images/I/61vK3WAD3LL._AC_SX466_.jpg"
+                },
+                {
+                    "id": 6,
+                    "name": "Smartish Funda tipo cartera para iPhone 17 Pro",
+                    "brand": "Smartish",
+                    "description": "Funda tipo cartera, soporte para tarjetas, protectora, para iPhone 17 Pro.",
+                    "price": 172.93,
+                    "currency": "BOB",
+                    "discount": 29,
+                    "old_price": 242.13,
+                    "colors": ["traje de noche negro", "Blues en el Verde", "so jaded", "[Montañas en movimiento]", "[Flor de cerezo]", "[Madera de nogal]"],
+                    "image": "https://m.media-amazon.com/images/I/71aqG4M7yUL._AC_SX679_.jpg"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "relojes",
+            "products": [
+                {
+                    "id": 7,
+                    "name": "Amazon Essentials Reloj para hombre",
+                    "brand": "Amazon Essentials",
+                    "description": "Reloj con correa fácil de leer para hombre, color marrón/dorado.",
+                    "price": 150.86,
+                    "currency": "BOB",
+                    "image": "https://m.media-amazon.com/images/I/816p5ZS1NoL._AC_SY550_.jpg"
+                },
+                {
+                    "id": 8,
+                    "name": "Casio Serie A158WA Reloj digital unisex",
+                    "brand": "Casio",
+                    "description": "Reloj digital unisex vintage, WR, cronómetro, alarma diaria, luz LED, batería de 7 años.",
+                    "price": 172.93,
+                    "currency": "BOB",
+                    "discount": 17,
+                    "old_price": 207.25,
+                    "colors": ["plateado", "Plateado/Dorado"],
+                    "image": "https://m.media-amazon.com/images/I/611typKnTvL._AC_SY550_.jpg"
+                },
+                {
+                    "id": 9,
+                    "name": "Smart Watch Boquaw para hombre/mujer",
+                    "brand": "Boquaw",
+                    "description": "Smartwatch fitness, llamadas, resistente al agua, monitor de ritmo cardíaco, SpO2, podómetro.",
+                    "price": 685.08,
+                    "currency": "BOB",
+                    "colors": ["Black-C"],
+                    "image": "https://m.media-amazon.com/images/I/61AmAxCq8ZL._AC_SX466_.jpg"
+                },
+                {
+                    "id": 10,
+                    "name": "Asan Ge Reloj de enfermera",
+                    "brand": "Asan Ge",
+                    "description": "Reloj de enfermera profesional, función luminosa, resistencia al agua 3ATM, correa de silicona.",
+                    "price": 172.93,
+                    "currency": "BOB",
+                    "colors": ["Blue", "Negro"],
+                    "image": "https://m.media-amazon.com/images/I/715XKOhYI7L._AC_SY535_.jpg"
+                }
+            ]
+        },
+        {
+        "id": 3,
+        "name": "laptops",
+        "products": [
+            {
+                "id": 11,
+                "name": "SGIN Computadora portátil 15.6''",
+                "brand": "SGIN",
+                "description": "Computadora portátil de 15.6 pulgadas, Win 11, 16GB RAM, 1024GB SSD, Core i3-10100Y, teclado retroiluminado, batería 53.2Wh, WiFi 6, pantalla IPS FHD.",
+                "price": 2767.93,
+                "currency": "BOB",
+                "discount": 71,
+                "old_price": 9687.93,
+                "color": "Gris",
+                "ram": "16 GB",
+                "storage": "1024 GB SSD",
+                "cpu": "Core i3-10100Y",
+                "screen_size": "15.6 Pulgadas",
+                "os": "Windows 11",
+                "image": "https://m.media-amazon.com/images/I/7139M8uxlIL._AC_SX466_.jpg"
+            },
+            {
+                "id": 12,
+                "name": "HP Stream - Laptop BrightView HD 14''",
+                "brand": "HP",
+                "description": "Laptop BrightView HD de 14 pulgadas, Intel Celeron N4120, 16GB RAM, 416GB almacenamiento, gráficos Intel UHD, cámara 720p, Wi-Fi.",
+                "price": 2069.08,
+                "currency": "BOB",
+                "discount": 25,
+                "old_price": 2761.08,
+                "color": "Oro",
+                "ram": "16 GB",
+                "storage": "416 GB",
+                "cpu": "Intel Celeron N4120",
+                "screen_size": "14 Pulgadas",
+                "os": "Windows 11 S",
+                "image": "https://m.media-amazon.com/images/I/71wVOooh9pL._AC_SX466_.jpg"
+            },
+            {
+                "id": 13,
+                "name": "Apple MacBook Air 2025 13'' M4",
+                "brand": "Apple",
+                "description": "MacBook Air 2025 de 13 pulgadas con chip M4, pantalla retina líquida, 24GB RAM, 512GB SSD, Mac OS.",
+                "price": 8232.38,
+                "currency": "BOB",
+                "color": "midnight",
+                "ram": "24 GB",
+                "storage": "512 GB SSD",
+                "cpu": "Apple M4",
+                "screen_size": "13.6 Pulgadas",
+                "os": "Mac OS",
+                "image": "https://m.media-amazon.com/images/I/71cWZUr9SVL._AC_SX522_.jpg"
+            },
+            {
+                "id": 14,
+                "name": "HP Computadora portátil 14''",
+                "brand": "HP",
+                "description": "Computadora portátil 14, Intel Celeron N4020, 4GB RAM, 64GB almacenamiento, pantalla HD, Windows 11 Home, gráficos 4K.",
+                "price": 1189.55,
+                "currency": "BOB",
+                "discount": 25,
+                "old_price": 1591.53,
+                "color": "blanco (Snowflake White)",
+                "ram": "4 GB",
+                "storage": "64 GB",
+                "cpu": "Celeron N4020",
+                "screen_size": "14 Pulgadas",
+                "os": "Windows 11 S",
+                "image": "https://m.media-amazon.com/images/I/815uX7wkOZS._AC_SX466_.jpg"
+            },
+            {
+                "id": 15,
+                "name": "Dell Inspiron 15.6''",
+                "brand": "Dell",
+                "description": "Laptop para negocios y estudiantes, 15.6 pulgadas, Windows 11 Pro, 32GB RAM, 1TB SSD, Intel i5-1155G7, pantalla táctil IPS FHD, teclado numérico, HDMI.",
+                "price": 3937.48,
+                "currency": "BOB",
+                "color": "Negro",
+                "ram": "32 GB",
+                "storage": "1 TB SSD",
+                "cpu": "Core i5-1155G7",
+                "screen_size": "15.6 Pulgadas",
+                "os": "Windows 11 Pro",
+                "image": "https://m.media-amazon.com/images/I/61Wc1fDGJuL._AC_SX466_PIbundle-3,TopRight,0,0_SH20_.jpg"
+            },
+            {
+                "id": 16,
+                "name": "HP Computadora portátil empresarial 15.6''",
+                "brand": "HP",
+                "description": "Computadora portátil empresarial de 15.6'', Office 2024, Copilot AI Chat, pantalla táctil HD, Intel 6-Core i3-1215U, 16GB RAM, 1TB SSD, Windows 11 Pro.",
+                "price": 3203.96,
+                "currency": "BOB",
+                "color": "plateado",
+                "ram": "16 GB",
+                "storage": "1 TB SSD",
+                "cpu": "i3-1215U",
+                "screen_size": "15.6 Pulgadas",
+                "os": "Windows 11 Pro",
+                "image": "https://m.media-amazon.com/images/I/71UQNKqfBDL._AC_SX466_.jpg"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "smartphones",
+        "products": [
+            {
+                "id": 17,
+                "name": "Samsung Galaxy S23 Ultra",
+                "brand": "Samsung",
+                "description": "Smartphone Galaxy S23 Ultra, 256GB, 12GB RAM, cámara cuádruple de 200MP, pantalla AMOLED de 6.8'', batería de 5000mAh.",
+                "price": 5999.99,
+                "currency": "BOB",
+                "image": "https://m.media-amazon.com/images/I/91BG1gW3YlL._AC_SX679_.jpg"
+            },
+            {
+                "id": 18,
+                "name": "iPhone 15 Pro Max",
+                "brand": "Apple",
+                "description": "iPhone 15 Pro Max, 512GB, color azul alpino, chip A17 Pro, pantalla Super Retina XDR de 6.7'', cámara triple de 48MP.",
+                "price": 8999.99,
+                "currency": "BOB",
+                "image": "https://m.media-amazon.com/images/I/61fXcCk0JDL._AC_SX679_.jpg"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "calzado",
+        "products": [
+            {
+                "id": 19,
+                "name": "Nike Zapatillas Air Force 1 '07 para hombre",
+                "brand": "Nike",
+                "description": "Zapatillas de baloncesto estilo retro con amortiguación, materiales 100% poliéster, suela de caucho para máximo agarre.",
+                "price": 624.50,
+                "currency": "BOB",
+                "discount": 15,
+                "old_price": 734.71,
+                "rating": 4.6,
+                "reviews": 9576,
+                "colors": ["Blanco", "Negro", "Triple Blanco", "Blanco/Negro"],
+                "sizes": ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "11.5", "12", "13"],
+                "material": "100% poliéster",
+                "sole": "Caucho",
+                "origin": "Importado",
+                "features": ["Zapatos de baloncesto", "Estilo retro", "Amortiguación", "Sin piel"],
+                "images": [
+                    "https://m.media-amazon.com/images/I/618FhFPg8+L._AC_SX625_.jpg",
+                    "https://m.media-amazon.com/images/I/71qL9cJh-SL._AC_SY575_.jpg",
+                    "https://m.media-amazon.com/images/I/61JJee52mrL._AC_SX575_.jpg"
+                ]
+            },
+            {
+                "id": 20,
+                "name": "Nike Court Vision Low Next Nature para hombre",
+                "brand": "Nike",
+                "description": "Enamorado del aspecto clásico del baloncesto de los 80, con al menos 20% de materiales reciclados. Diseño inspirado en zapatos de baloncesto de mediados de los 80.",
+                "price": 589.48,
+                "currency": "BOB",
+                "discount": 5,
+                "old_price": 620.50,
+                "rating": 4.4,
+                "reviews": 8804,
+                "colors": [
+                    "Negro/Negro/Negro",
+                    "Negro",
+                    "Polvo de fotón/antracita/blanco cumbre",
+                    "Blanco/Negro/Blanco",
+                    "Blanco/Oliva Mediana",
+                    "Blanco/Blanco/Blanco",
+                    "Punta de lápiz/Blanco",
+                    "Team Crimson/White"
+                ],
+                "sizes": ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "11.5", "12"],
+                "weight": "1 Libra",
+                "ideal_for": "Ropa deportiva",
+                "cushion": "Suela completa",
+                "features": [
+                    "Fabricado con al menos 20% de materiales reciclados",
+                    "Diseño inspirado en baloncesto de los 80",
+                    "Cuello acolchado de corte bajo",
+                    "Perforaciones para comodidad y transpirabilidad",
+                    "Superposiciones cosidas"
+                ],
+                "images": [
+                    "https://m.media-amazon.com/images/I/61ASywrkNwL._AC_SX569_.jpg",
+                    "https://m.media-amazon.com/images/I/61b3BtLDDGL._AC_SX569_.jpg",
+                    "https://m.media-amazon.com/images/I/81624HvqmuL._AC_SX679_.jpg"
+                ]
+            },
+            {
+                "id": 21,
+                "name": "Nike ZOOM Air Force 1 Low Supreme para hombre",
+                "brand": "Nike",
+                "description": "Diseño atemporal con acabado lujoso y detalles premium. La comodidad se encuentra con la longevidad, diseñada para uso durante todo el día. Icono cultural de la calle.",
+                "price": 1140.35,
+                "currency": "BOB",
+                "discount": 10,
+                "old_price": 1267.05,
+                "rating": 4.4,
+                "reviews": 36,
+                "colors": ["Blanco/Blanco", "Negro/Negro"],
+                "sizes": ["7", "8", "9", "10", "11", "11.5", "12", "13"],
+                "sole": "Caucho",
+                "exterior": "Cuero",
+                "interior": "Leather",
+                "closure": "Cordones",
+                "features": [
+                    "Diseño atemporal",
+                    "Acabado lujoso con detalles premium",
+                    "Comodidad y longevidad",
+                    "Estilo versátil",
+                    "Icono cultural sneaker"
+                ],
+                "images": [
+                    "https://m.media-amazon.com/images/I/51dm6loN4lL._AC_SY575_.jpg",
+                    "https://m.media-amazon.com/images/I/51G6jNZnYWL._AC_SY575_.jpg",
+                    "https://m.media-amazon.com/images/I/51hbW-54nFL._AC_SY575_.jpg"
+                ]
+            },
+            {
+                "id": 22,
+                "name": "Nike Air Force 1 Mid (TD) - Niño Pequeño",
+                "brand": "Nike",
+                "description": "Nike Air Force 1 para niños pequeños, 100% cuero, suela de poliuretano. Disponible en múltiples colores para los más pequeños.",
+                "price": 485.90,
+                "currency": "BOB",
+                "discount": 8,
+                "old_price": 528.15,
+                "rating": 4.5,
+                "reviews": 1067,
+                "colors": [
+                    "Blanco",
+                    "Whiteblackog",
+                    "Negro/Negro",
+                    "Negro/Negro/Negro",
+                    "Blanco y plateado",
+                    "Tinte azul/blanco/morado discoteca/polar",
+                    "Photon Dust Team Rojo",
+                    "Muñeca Blanca Blanca",
+                    "Blanco/azul fotográfico claro/azul real profundo",
+                    "Negro/Blanco",
+                    "Gris Lobo Gris Summit Blanco",
+                    "Blanco/Blanco/Blanco-blanco",
+                    "Trigo/Trigo/Goma Marrón Claro",
+                    "Blanco Noble Rojo Blanco",
+                    "Blanco Azul Real Gum Amarillo",
+                    "Resplandor blanco/verde"
+                ],
+                "sizes": ["1C", "1.5C", "2C", "2.5C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "10C"],
+                "material": "100% cuero",
+                "sole": "Poliuretano",
+                "exterior": "Cuero",
+                "closure": "Cordones",
+                "category": "Niño Pequeño",
+                "features": ["NIKE", "FUERZA 1 MID (TD)", "Diseño clásico"],
+                "images": [
+                    "https://m.media-amazon.com/images/I/61obWjfgEzL._AC_SY575_.jpg",
+                    "https://m.media-amazon.com/images/I/71qUOd7FT1L._AC_SY575_.jpg",
+                    "https://m.media-amazon.com/images/I/61uho5mx33L._AC_SY575_.jpg"
+                ]
+            },
+            {
+                "id": 23,
+                "name": "Nike Air Force 1 - Big Kids (Niño Grande)",
+                "brand": "Nike",
+                "description": "Zapatillas de baloncesto estilo retro con amortiguación para niños grandes. 100% poliéster, suela de caucho, sin piel.",
+                "price": 558.75,
+                "currency": "BOB",
+                "discount": 12,
+                "old_price": 634.95,
+                "rating": 4.6,
+                "reviews": 3595,
+                "colors": ["Negro/Blanco", "Blanco/Blanco", "Negro/Negro"],
+                "sizes": ["3.5Y", "4Y", "4.5Y", "5Y", "5.5Y", "6Y", "6.5Y", "7Y"],
+                "material": "100% poliéster",
+                "sole": "Caucho",
+                "origin": "Importado",
+                "features": [
+                    "Zapatos de baloncesto",
+                    "Estilo retro",
+                    "Amortiguación",
+                    "Sin piel"
+                ],
+                "images": [
+                    "https://m.media-amazon.com/images/I/51R8AifNYUL._AC_SY575_.jpg",
+                    "https://m.media-amazon.com/images/I/51RWZ7A0DwL._AC_SY575_.jpg",
+                    "https://m.media-amazon.com/images/I/51J1ZWAQPpL._AC_SY575_.jpg"
+                ]
+            },
+            {
+                "id": 24,
+                "name": "Nike Air Force 1 '07 LV8 para hombre",
+                "brand": "Nike",
+                "description": "Cuello de corte bajo y acolchado que se ve elegante y se siente cómodo. Suela de goma con círculos de pivote de aros tradicionales para tracción y durabilidad.",
+                "price": 695.20,
+                "currency": "BOB",
+                "discount": 18,
+                "old_price": 847.80,
+                "rating": 4.7,
+                "reviews": 1654,
+                "colors": [
+                    "Negro/Goma Marrón Claro/Blanco Summit",
+                    "Blanco/Negro",
+                    "Triple Blanco",
+                    "Negro/Rojo"
+                ],
+                "sizes": ["6", "6.5", "7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "11.5", "12", "13"],
+                "style": "FQ8714-004",
+                "origin": "Imported",
+                "sole": "Caucho",
+                "exterior": "Lona envejecida y cuero al diseño de la suela",
+                "closure": "Cordones",
+                "features": [
+                    "Cuello de corte bajo",
+                    "Suela de goma con círculos de pivote",
+                    "Cuello acolchado elegante y cómodo",
+                    "Tracción y durabilidad"
+                ],
+                "images": [
+                    "https://m.media-amazon.com/images/I/5132+wizSoL._AC_SY575_.jpg",
+                    "https://m.media-amazon.com/images/I/61IPph6TQgL._AC_SY575_.jpg",
+                    "https://m.media-amazon.com/images/I/61+xKg1X0lL._AC_SY575_.jpg"
+                ]
+            },
+            {
+                "id": 25,
+                "name": "Nike Air Force 1 '07 para mujer",
+                "brand": "Nike",
+                "description": "Zapatillas estilo baloncesto con detalles de impacto sobresalientes y acolchado de aire Nike. Diseño clásico adaptado para mujeres.",
+                "price": 672.40,
+                "currency": "BOB",
+                "discount": 15,
+                "old_price": 791.06,
+                "rating": 4.6,
+                "reviews": 3099,
+                "colors": [
+                    "Blanco/Negro",
+                    "Triple Blanco",
+                    "Negro/Negro",
+                    "Rosa/Blanco",
+                    "Azul/Blanco"
+                ],
+                "sizes": ["5", "5.5", "6", "6.5", "7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11"],
+                "sole": "Caucho",
+                "exterior": "Cuero",
+                "closure": "Sin cierre",
+                "gender": "Mujer",
+                "features": [
+                    "Zapatos estilo baloncesto",
+                    "Detalles de impacto sobresalientes",
+                    "Nike Acolchado de aire",
+                    "Diseño clásico para mujer"
+                ],
+                "images": [
+                    "https://m.media-amazon.com/images/I/610g3QygS9L._AC_SY625_.jpg",
+                    "https://m.media-amazon.com/images/I/51b4A6o1VTL._AC_SY575_.jpg",
+                    "https://m.media-amazon.com/images/I/715OiECRn0L._AC_SY575_.jpg"
+                ]
+            },
+            {
+                "id": 26,
+                "name": "Nike Dunk Low Retro para hombre",
+                "brand": "Nike",
+                "description": "Zapatos de skate con diseño ligero y estilo retro. Material sintético y goma, suela de caucho para máxima durabilidad.",
+                "price": 643.45,
+                "currency": "BOB",
+                "discount": 11,
+                "old_price": 725.80,
+                "rating": 4.7,
+                "reviews": 371,
+                "popular": "200+ comprados el mes pasado",
+                "colors": ["Negro/Blanco", "Panda", "Retro High", "University Red"],
+                "sizes": ["6", "6.5", "7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "11.5", "12", "13"],
+                "material": "Sintético y goma",
+                "sole": "Caucho",
+                "exterior": "Sintético",
+                "origin": "Hecho en EE. UU. o importado",
+                "features": [
+                    "Zapatos de skate",
+                    "Diseño ligero",
+                    "Estilo retro",
+                    "Suela de caucho duradera"
+                ],
+                "images": [
+                    "https://m.media-amazon.com/images/I/61J6jXUA7YL._AC_SY575_.jpg",
+                    "https://m.media-amazon.com/images/I/71Y8IlbaE3L._AC_SY575_.jpg",
+                    "https://m.media-amazon.com/images/I/61vjCTQtm+L._AC_SY575_.jpg"
+                ]
+            },
+            {
+                "id": 27,
+                "name": "Nike Air Force 1 '07 LV8 Basketball - Blanco/Antracita",
+                "brand": "Nike",
+                "description": "Tenis de baloncesto con cuello de corte bajo acolchado, suela de goma con aros tradicionales para tracción y durabilidad.",
+                "price": 718.30,
+                "currency": "BOB",
+                "discount": 12,
+                "old_price": 816.25,
+                "rating": 4.5,
+                "reviews": 12,
+                "style": "HM9483-101",
+                "colors": ["Blanco/Antracita", "Negro/Blanco"],
+                "sizes": ["7", "8", "9", "10", "11", "12", "13"],
+                "sole": "Caucho",
+                "exterior": "Lona envejecida y cuero al diseño de la suela",
+                "interior": "Poliéster",
+                "origin": "Importado",
+                "features": [
+                    "Cuello de corte bajo",
+                    "Suela de goma con aros tradicionales",
+                    "Cuello acolchado elegante y cómodo",
+                    "Tracción y durabilidad mejoradas"
+                ],
+                "images": [
+                    "https://m.media-amazon.com/images/I/61HKBgM+pAL._AC_SY575_.jpg",
+                    "https://m.media-amazon.com/images/I/81h3DLs-luL._AC_SX575_.jpg",
+                    "https://m.media-amazon.com/images/I/81oFuMlrXfL._AC_SX575_.jpg"
+                ]
+            },
+            {
+                "id": 28,
+                "name": "Nike Men's Air Force 1 React Basketball Shoe - Gris Humo",
+                "brand": "Nike",
+                "description": "Zapatos de baloncesto 100% auténticos con suela de caucho, material exterior de ante y cierre con cordones.",
+                "price": 1189.20,
+                "currency": "BOB",
+                "discount": 8,
+                "old_price": 1292.61,
+                "rating": 4.6,
+                "reviews": 363,
+                "colors": [
+                    "Gris humo claro/gris humo claro",
+                    "Negro/Rojo/Azul",
+                    "Picante Rojo-blanco",
+                    "Groen",
+                    "Summit Blanco/Azul Báltico",
+                    "Negro Antracita Violeta Estrella Barely Volt",
+                    "Blanco/Rush Naranja-blanco",
+                    "Blanco",
+                    "Platino blanco puro",
+                    "Blanco Vela/Platino",
+                    "Blanco Rosa Amarillo",
+                    "Summit White White Blue Whisper",
+                    "Rojo, negro, azul",
+                    "Negro y blanco",
+                    "Blanco, blanco, blanco",
+                    "Blanco/Blanco/Menta Claro",
+                    "Muli/Vela/Hielo lila"
+                ],
+                "sizes": ["6", "6.5", "7", "7.5", "8", "9", "9.5", "10", "10.5", "11", "11.5", "12", "13", "14", "17"],
+                "sole": "Caucho",
+                "exterior": "Ante",
+                "closure": "Cordones",
+                "water_resistance": "No resistente al agua",
+                "authentic": true,
+                "features": [
+                    "100% auténticos",
+                    "Material de ante premium",
+                    "Suela de caucho",
+                    "Múltiples opciones de color"
+                ],
+                "images": [
+                    "https://m.media-amazon.com/images/I/61BWcTXBIwL._AC_SY575_.jpg",
+                    "https://m.media-amazon.com/images/I/61darzfvwML._AC_SY575_.jpg",
+                    "https://m.media-amazon.com/images/I/61OJyIOuy8L._AC_SY575_.jpg"
+                ]
+            },
+            {
+                "id": 29,
+                "name": "Nike Men's Air Force 1 React Basketball Shoe - Negro/Rojo/Azul",
+                "brand": "Nike",
+                "description": "Zapatos de baloncesto 100% auténticos con suela de caucho, material exterior de ante y cierre con cordones.",
+                "price": 552.80,
+                "currency": "BOB",
+                "discount": 15,
+                "old_price": 650.35,
+                "rating": 4.6,
+                "reviews": 363,
+                "colors": ["Negro/Rojo/Azul", "Gris humo claro", "Summit Blanco/Azul Báltico"],
+                "sizes": ["6", "6.5", "7.5", "8", "9", "9.5", "10", "10.5", "11", "11.5", "12"],
+                "sole": "Caucho",
+                "exterior": "Ante",
+                "closure": "Cordones",
+                "water_resistance": "No resistente al agua",
+                "authentic": true,
+                "features": ["100% auténticos", "Material de ante", "Diseño multicolor"],
+                "images": [
+                    "https://m.media-amazon.com/images/I/61k4XhW4RkL._AC_SY575_.jpg",
+                    "https://m.media-amazon.com/images/I/61dP1Tyk-1L._AC_SY575_.jpg",
+                    "https://m.media-amazon.com/images/I/61-kzllAzxL._AC_SY575_.jpg"
+                ]
+            },
+            {
+                "id": 30,
+                "name": "Nike Men's Air Force 1 React Basketball Shoe - Picante Rojo",
+                "brand": "Nike",
+                "description": "Zapatos de baloncesto 100% auténticos con suela de caucho, material exterior de ante y cierre con cordones.",
+                "price": 615.15,
+                "currency": "BOB",
+                "discount": 12,
+                "old_price": 698.81,
+                "rating": 4.6,
+                "reviews": 363,
+                "colors": ["Picante Rojo-blanco", "Negro/Rojo/Azul", "Blanco"],
+                "sizes": ["6", "6.5", "7.5", "8", "9", "9.5", "10", "10.5", "11", "11.5", "12"],
+                "sole": "Caucho",
+                "exterior": "Ante",
+                "closure": "Cordones",
+                "water_resistance": "No resistente al agua",
+                "authentic": true,
+                "features": ["100% auténticos", "Material de ante premium", "Diseño llamativo"],
+                "images": [
+                    "https://m.media-amazon.com/images/I/61DyRYzWAfL._AC_SX575_.jpg",
+                    "https://m.media-amazon.com/images/I/71TGagLZW4L._AC_SX575_.jpg",
+                    "https://m.media-amazon.com/images/I/71VWuWoduSL._AC_SX575_.jpg"
+                ]
+            },
+            {
+                "id": 31,
+                "name": "Nike Men's Air Force 1 React - Summit White Blue Whisper",
+                "brand": "Nike",
+                "description": "Zapatos de baloncesto 100% auténticos con suela de caucho, material exterior de ante y cierre con cordones.",
+                "price": 615.15,
+                "currency": "BOB",
+                "discount": 10,
+                "old_price": 683.50,
+                "rating": 4.6,
+                "reviews": 363,
+                "colors": ["Summit White White Blue Whisper", "Blanco Rosa Amarillo", "Blanco/Blanco/Menta Claro"],
+                "sizes": ["6", "6.5", "7.5", "8", "9", "9.5", "10", "10.5", "11", "11.5", "12", "14"],
+                "sole": "Caucho",
+                "exterior": "Ante",
+                "closure": "Cordones",
+                "water_resistance": "No resistente al agua",
+                "authentic": true,
+                "features": ["100% auténticos", "Colores sutiles", "Material de ante"],
+                "images": [
+                    "https://m.media-amazon.com/images/I/51tG2IOcEZL._AC_SX575_.jpg",
+                    "https://m.media-amazon.com/images/I/61LwGd+x2OL._AC_SX575_.jpg",
+                    "https://m.media-amazon.com/images/I/61RGuhqMaDL._AC_SX575_.jpg"
+                ]
+            },
+            {
+                "id": 32,
+                "name": "Nike Men's Air Force 1 React - Summit Blanco/Azul Báltico",
+                "brand": "Nike",
+                "description": "Zapatos de baloncesto 100% auténticos con suela de caucho, material exterior de ante y cierre con cordones.",
+                "price": 615.15,
+                "currency": "BOB",
+                "discount": 10,
+                "old_price": 683.50,
+                "rating": 4.6,
+                "reviews": 363,
+                "colors": ["Summit Blanco/Azul Báltico", "Negro Antracita Violeta Estrella", "Groen"],
+                "sizes": ["6", "6.5", "7.5", "8", "9", "9.5", "10", "10.5", "11", "11.5", "12"],
+                "sole": "Caucho",
+                "exterior": "Ante",
+                "closure": "Cordones",
+                "water_resistance": "No resistente al agua",
+                "authentic": true,
+                "features": ["100% auténticos", "Diseño elegante", "Colores premium"],
+                "images": [
+                    "https://m.media-amazon.com/images/I/51tHq9SQWRL._AC_SX575_.jpg",
+                    "https://m.media-amazon.com/images/I/61h7KqBD2ML._AC_SX575_.jpg",
+                    "https://m.media-amazon.com/images/I/61ktakKHajL._AC_SX575_.jpg"
+                ]
+            },
+            {
+                "id": 33,
+                "name": "Nike Men's Air Force 1 React - Blanco/Rush Naranja",
+                "brand": "Nike",
+                "description": "Zapatos de baloncesto 100% auténticos con suela de caucho, material exterior de ante y cierre con cordones.",
+                "price": 615.15,
+                "currency": "BOB",
+                "discount": 10,
+                "old_price": 683.50,
+                "rating": 4.6,
+                "reviews": 363,
+                "colors": ["Blanco/Rush Naranja-blanco", "Blanco", "Platino blanco puro"],
+                "sizes": ["6", "6.5", "7.5", "8", "9", "9.5", "10", "10.5", "11", "11.5", "12"],
+                "sole": "Caucho",
+                "exterior": "Ante",
+                "closure": "Cordones",
+                "water_resistance": "No resistente al agua",
+                "authentic": true,
+                "features": ["100% auténticos", "Colores vibrantes", "Material premium"],
+                "images": [
+                    "https://m.media-amazon.com/images/I/511+TfOOujL._AC_SY575_.jpg",
+                    "https://m.media-amazon.com/images/I/51LKkTFVSKL._AC_SY575_.jpg",
+                    "https://m.media-amazon.com/images/I/61k4TrmpyvL._AC_SY575_.jpg"
+                ]
+            },
+            {
+                "id": 34,
+                "name": "Nike Court Vision Low para hombre - Vela/Borgoña Crush",
+                "brand": "Nike",
+                "description": "El estilo de baloncesto de los 80 se une a la cultura actual. Diseño inspirado en los tenis de baloncesto de la vieja escuela con suela de goma clásica.",
+                "price": 552.80,
+                "currency": "BOB",
+                "discount": 15,
+                "old_price": 650.35,
+                "rating": 4.6,
+                "reviews": 1091,
+                "colors": [
+                    "Vela/Borgoña Crush/Caqui Claro",
+                    "Gris Niebla/Negro/Blanco",
+                    "Vela/Gris Humo Claro/Marrón Orewood Claro/Blanco",
+                    "Vela/Azul marino de medianoche-guma marrón claro",
+                    "Blanco/Negro",
+                    "Caqui/Sequoia/Gum Marrón Medio",
+                    "Blanco (Pure Platinum/White)",
+                    "Vela/Fogata Naranja/Gum Marrón Medio"
+                ],
+                "sizes": ["6", "6.5", "7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "11.5", "12", "13"],
+                "weight": "13 Onzas",
+                "ideal_for": "Casual diario",
+                "cushion": "Breathable",
+                "features": [
+                    "Estilo de baloncesto de los 80",
+                    "Parte superior de cuero real y sintético",
+                    "Suela de goma para durabilidad y tracción",
+                    "Perforaciones para transpirabilidad",
+                    "Diseño inspirado en siluetas icónicas del pasado"
+                ],
+                "images": [
+                    "https://m.media-amazon.com/images/I/61FmGGwpLoL._AC_SX569_.jpg",
+                    "https://m.media-amazon.com/images/I/7160NiR5qBL._AC_SX569_.jpg",
+                    "https://m.media-amazon.com/images/I/61Km3GKxq+L._AC_SX569_.jpg"
+                ]
+            }
+        ]
+    }
+    ]
+}
