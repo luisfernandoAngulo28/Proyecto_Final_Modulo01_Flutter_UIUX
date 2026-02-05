@@ -354,6 +354,122 @@ Este proyecto demuestra dominio de:
 
 ---
 
+## 🐛 Problemas Conocidos y Soluciones
+
+Durante el desarrollo se encontraron y resolvieron los siguientes problemas:
+
+### 1. **RenderFlex Overflow en Android (87 pixels)**
+
+**Problema:**
+```
+A RenderFlex overflowed by 87 pixels on the bottom.
+Widget: Column at signin_screen.dart:225
+```
+
+**Causa:** Cuando aparecía el teclado en Android, el contenido de la pantalla de login no cabía en el espacio disponible, causando un overflow de 87 pixels.
+
+**Solución:**
+- Envolver el contenido en un `SingleChildScrollView`
+- Eliminar el `Spacer()` que tenía altura fija
+- Usar `Padding` en lugar de `Container` con altura fija
+
+```dart
+// ❌ Antes (causaba overflow)
+Container(
+  height: screenHeight,
+  child: Column(
+    children: [
+      // ... contenido
+      Spacer(), // Problema: altura fija
+    ],
+  ),
+)
+
+// ✅ Después (funciona correctamente)
+SingleChildScrollView(
+  child: Padding(
+    padding: EdgeInsets.symmetric(horizontal: 20),
+    child: Column(
+      children: [
+        // ... contenido
+        SizedBox(height: 40), // Espacio flexible
+      ],
+    ),
+  ),
+)
+```
+
+### 2. **Warning: OnBackInvokedCallback en Android**
+
+**Problema:**
+```
+OnBackInvokedCallback is not enabled for the application.
+Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+```
+
+**Causa:** Android 13+ requiere configuración explícita para el manejo del botón "back".
+
+**Solución:**
+Agregar el atributo en `android/app/src/main/AndroidManifest.xml`:
+
+```xml
+<application
+    android:label="proyectomodulo01"
+    android:name="${applicationName}"
+    android:icon="@mipmap/ic_launcher"
+    android:enableOnBackInvokedCallback="true">  <!-- ✅ Agregado -->
+    <!-- ... -->
+</application>
+```
+
+### 3. **Logs de Rendimiento en Emulador**
+
+**Mensajes vistos:**
+```
+I/Choreographer: Skipped 322 frames! The application may be doing too much work on its main thread.
+D/EGL_emulation: app_time_stats: avg=868.56ms min=152.30ms max=1921.84ms count=3
+```
+
+**Explicación:** Estos son mensajes normales del emulador de Android que muestran estadísticas de rendimiento del sistema gráfico (EGL). **NO son errores** y solo aparecen en el emulador durante el desarrollo.
+
+**Acción:** Ninguna acción requerida. Estos mensajes no aparecen en dispositivos físicos ni afectan la funcionalidad de la app.
+
+### 4. **CORS Issues con JSON Server**
+
+**Problema:** Al consumir la API desde el navegador Chrome, se bloqueaban las peticiones por CORS.
+
+**Solución:**
+Iniciar JSON Server con el flag `--host`:
+
+```bash
+json-server --watch db.json --port 3000 --host 0.0.0.0
+```
+
+### 5. **Type Mismatch en Product IDs**
+
+**Problema:** Error al parsear IDs de productos desde JSON (esperaba `int`, recibía `String`).
+
+**Solución:**
+Manejo flexible de tipos en el modelo:
+
+```dart
+factory Product.fromJson(Map<String, dynamic> json) {
+  return Product(
+    id: json['id'] is int ? json['id'] : int.tryParse(json['id'].toString()) ?? 0,
+    // ... resto de campos
+  );
+}
+```
+
+### 📝 Notas para Desarrollo
+
+- **Plataforma recomendada:** Chrome para desarrollo rápido
+- **Testing en Android:** El emulador puede mostrar warnings de rendimiento que no afectan la app
+- **Hot Reload:** Funciona correctamente en ambas plataformas
+- **Firebase:** Requiere configuración separada para Android y Web
+
+---
+
 ## 🤝 Contribuciones
 
 Este es un proyecto académico, pero las sugerencias son bienvenidas. Puedes:

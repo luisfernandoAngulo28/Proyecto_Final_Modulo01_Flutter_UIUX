@@ -69,10 +69,8 @@ class SignInState extends State<SignIn> {
 
     try {
       // Crear nuevo usuario en Firebase
-      UserCredential userCredential = await FirebaseAuth.instance.createUserWithEmailAndPassword(
-        email: email,
-        password: password,
-      );
+      UserCredential userCredential = await FirebaseAuth.instance
+          .createUserWithEmailAndPassword(email: email, password: password);
 
       // Actualizar el perfil con el nombre
       await userCredential.user?.updateDisplayName(name);
@@ -93,7 +91,7 @@ class SignInState extends State<SignIn> {
       }
     } on FirebaseAuthException catch (e) {
       String errorMessage = 'An error occurred';
-      
+
       if (e.code == 'weak-password') {
         errorMessage = 'The password is too weak';
       } else if (e.code == 'email-already-in-use') {
@@ -169,7 +167,7 @@ class SignInState extends State<SignIn> {
       }
     } on FirebaseAuthException catch (e) {
       String errorMessage = 'An error occurred';
-      
+
       if (e.code == 'user-not-found') {
         errorMessage = 'No user found with this email';
       } else if (e.code == 'wrong-password') {
@@ -211,75 +209,109 @@ class SignInState extends State<SignIn> {
 
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height;
-    
     return Scaffold(
       body: SafeArea(
-        child: Container(
-          height: screenHeight,
-          width: double.infinity,
-          padding: const EdgeInsets.symmetric(horizontal: 20),
-          decoration: BoxDecoration(
-            color: Colors.white,
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              SizedBox(height: 20),
-              // Botón de regreso
-              Container(
-                width: 44,
-                height: 44,
-                decoration: ShapeDecoration(
-                  color: const Color(0xFFF6F6F8),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(40),
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                SizedBox(height: 20),
+                // Botón de regreso
+                Container(
+                  width: 44,
+                  height: 44,
+                  decoration: ShapeDecoration(
+                    color: const Color(0xFFF6F6F8),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(40),
+                    ),
+                  ),
+                  child: IconButton(
+                    icon: Icon(Icons.arrow_back, size: 20),
+                    onPressed: () => Navigator.pop(context),
                   ),
                 ),
-                child: IconButton(
-                  icon: Icon(Icons.arrow_back, size: 20),
-                  onPressed: () => Navigator.pop(context),
-                ),
-              ),
-              SizedBox(height: 40),
-              // Título
-              Center(
-                child: Text(
-                  _isSignUpMode ? 'Create Account' : 'Hello Again!',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: const Color(0xFF2B2B2B),
-                    fontSize: 32,
-                    fontFamily: 'Raleway',
-                    fontWeight: FontWeight.w700,
-                  ),
-                ),
-              ),
-              SizedBox(height: 8),
-              // Subtítulo
-              Center(
-                child: SizedBox(
-                  width: 315,
+                SizedBox(height: 40),
+                // Título
+                Center(
                   child: Text(
-                    _isSignUpMode 
-                        ? 'Fill your information below or register\nwith your social account'
-                        : 'Fill your details or continue with\nsocial media',
+                    _isSignUpMode ? 'Create Account' : 'Hello Again!',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                      color: const Color(0xFF707B81),
-                      fontSize: 16,
-                      fontFamily: 'Poppins',
-                      fontWeight: FontWeight.w400,
-                      height: 1.50,
+                      color: const Color(0xFF2B2B2B),
+                      fontSize: 32,
+                      fontFamily: 'Raleway',
+                      fontWeight: FontWeight.w700,
                     ),
                   ),
                 ),
-              ),
-              SizedBox(height: 40),
-              // Campo de nombre (solo en modo registro)
-              if (_isSignUpMode) ...[
+                SizedBox(height: 8),
+                // Subtítulo
+                Center(
+                  child: SizedBox(
+                    width: 315,
+                    child: Text(
+                      _isSignUpMode
+                          ? 'Fill your information below or register\nwith your social account'
+                          : 'Fill your details or continue with\nsocial media',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: const Color(0xFF707B81),
+                        fontSize: 16,
+                        fontFamily: 'Poppins',
+                        fontWeight: FontWeight.w400,
+                        height: 1.50,
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(height: 40),
+                // Campo de nombre (solo en modo registro)
+                if (_isSignUpMode) ...[
+                  Text(
+                    'Full Name',
+                    style: TextStyle(
+                      color: const Color(0xFF2B2B2B),
+                      fontSize: 16,
+                      fontFamily: 'Raleway',
+                      fontWeight: FontWeight.w500,
+                      height: 1.25,
+                    ),
+                  ),
+                  SizedBox(height: 12),
+                  Container(
+                    decoration: ShapeDecoration(
+                      color: const Color(0xFFF6F6F8),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(14),
+                      ),
+                    ),
+                    child: TextField(
+                      controller: _nameController,
+                      keyboardType: TextInputType.name,
+                      decoration: InputDecoration(
+                        hintText: 'Batman Bruce Wayne',
+                        hintStyle: TextStyle(
+                          color: const Color(0xFF6A6A6A),
+                          fontSize: 14,
+                          fontFamily: 'Poppins',
+                          fontWeight: FontWeight.w500,
+                        ),
+                        border: InputBorder.none,
+                        contentPadding: EdgeInsets.symmetric(
+                          horizontal: 14,
+                          vertical: 16,
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 30),
+                ],
+                // Email
                 Text(
-                  'Full Name',
+                  'Email Address',
                   style: TextStyle(
                     color: const Color(0xFF2B2B2B),
                     fontSize: 16,
@@ -297,10 +329,10 @@ class SignInState extends State<SignIn> {
                     ),
                   ),
                   child: TextField(
-                    controller: _nameController,
-                    keyboardType: TextInputType.name,
+                    controller: _emailController,
+                    keyboardType: TextInputType.emailAddress,
                     decoration: InputDecoration(
-                      hintText: 'Batman Bruce Wayne',
+                      hintText: 'xyz@gmail.com',
                       hintStyle: TextStyle(
                         color: const Color(0xFF6A6A6A),
                         fontSize: 14,
@@ -316,185 +348,150 @@ class SignInState extends State<SignIn> {
                   ),
                 ),
                 SizedBox(height: 30),
-              ],
-              // Email
-              Text(
-                'Email Address',
-                style: TextStyle(
-                  color: const Color(0xFF2B2B2B),
-                  fontSize: 16,
-                  fontFamily: 'Raleway',
-                  fontWeight: FontWeight.w500,
-                  height: 1.25,
-                ),
-              ),
-              SizedBox(height: 12),
-              Container(
-                decoration: ShapeDecoration(
-                  color: const Color(0xFFF6F6F8),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(14),
+                // Password
+                Text(
+                  'Password',
+                  style: TextStyle(
+                    color: const Color(0xFF2B2B2B),
+                    fontSize: 16,
+                    fontFamily: 'Raleway',
+                    fontWeight: FontWeight.w500,
+                    height: 1.25,
                   ),
                 ),
-                child: TextField(
-                  controller: _emailController,
-                  keyboardType: TextInputType.emailAddress,
-                  decoration: InputDecoration(
-                    hintText: 'xyz@gmail.com',
-                    hintStyle: TextStyle(
-                      color: const Color(0xFF6A6A6A),
-                      fontSize: 14,
-                      fontFamily: 'Poppins',
-                      fontWeight: FontWeight.w500,
-                    ),
-                    border: InputBorder.none,
-                    contentPadding: EdgeInsets.symmetric(
-                      horizontal: 14,
-                      vertical: 16,
-                    ),
-                  ),
-                ),
-              ),
-              SizedBox(height: 30),
-              // Password
-              Text(
-                'Password',
-                style: TextStyle(
-                  color: const Color(0xFF2B2B2B),
-                  fontSize: 16,
-                  fontFamily: 'Raleway',
-                  fontWeight: FontWeight.w500,
-                  height: 1.25,
-                ),
-              ),
-              SizedBox(height: 12),
-              Container(
-                decoration: ShapeDecoration(
-                  color: const Color(0xFFF6F6F8),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(14),
-                  ),
-                ),
-                child: TextField(
-                  controller: _passwordController,
-                  obscureText: _obscurePassword,
-                  decoration: InputDecoration(
-                    hintText: '********',
-                    hintStyle: TextStyle(
-                      color: const Color(0xFF6A6A6A),
-                      fontSize: 14,
-                      fontFamily: 'Poppins',
-                      fontWeight: FontWeight.w500,
-                    ),
-                    border: InputBorder.none,
-                    contentPadding: EdgeInsets.symmetric(
-                      horizontal: 14,
-                      vertical: 16,
-                    ),
-                    suffixIcon: IconButton(
-                      icon: Icon(
-                        _obscurePassword
-                            ? Icons.visibility_off
-                            : Icons.visibility,
-                        color: const Color(0xFF6A6A6A),
-                      ),
-                      onPressed: () {
-                        setState(() {
-                          _obscurePassword = !_obscurePassword;
-                        });
-                      },
-                    ),
-                  ),
-                ),
-              ),
-              SizedBox(height: 12),
-              // Recovery Password (solo en modo Sign In)
-              if (!_isSignUpMode)
-                Align(
-                  alignment: Alignment.centerRight,
-                  child: Text(
-                    'Recovery Password',
-                    textAlign: TextAlign.right,
-                    style: TextStyle(
-                      color: const Color(0xFF707B81),
-                      fontSize: 12,
-                      fontFamily: 'Poppins',
-                      fontWeight: FontWeight.w400,
-                      height: 1.33,
-                    ),
-                  ),
-                ),
-              SizedBox(height: 32),
-              // Botón Sign In o Sign Up
-              GestureDetector(
-                onTap: _isSignUpMode ? _handleSignUp : _handleSignIn,
-                child: Container(
-                  width: double.infinity,
-                  height: 50,
+                SizedBox(height: 12),
+                Container(
                   decoration: ShapeDecoration(
-                    color: const Color(0xFF0D6EFD),
+                    color: const Color(0xFFF6F6F8),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(14),
                     ),
                   ),
-                  child: Center(
-                    child: Text(
-                      _isSignUpMode ? 'Create Account' : 'Sign In',
-                      style: TextStyle(
-                        color: Colors.white,
+                  child: TextField(
+                    controller: _passwordController,
+                    obscureText: _obscurePassword,
+                    decoration: InputDecoration(
+                      hintText: '********',
+                      hintStyle: TextStyle(
+                        color: const Color(0xFF6A6A6A),
                         fontSize: 14,
-                        fontFamily: 'Raleway',
-                        fontWeight: FontWeight.w600,
+                        fontFamily: 'Poppins',
+                        fontWeight: FontWeight.w500,
+                      ),
+                      border: InputBorder.none,
+                      contentPadding: EdgeInsets.symmetric(
+                        horizontal: 14,
+                        vertical: 16,
+                      ),
+                      suffixIcon: IconButton(
+                        icon: Icon(
+                          _obscurePassword
+                              ? Icons.visibility_off
+                              : Icons.visibility,
+                          color: const Color(0xFF6A6A6A),
+                        ),
+                        onPressed: () {
+                          setState(() {
+                            _obscurePassword = !_obscurePassword;
+                          });
+                        },
                       ),
                     ),
                   ),
                 ),
-              ),
-              Spacer(),
-              // New User / Already have account
-              Center(
-                child: Padding(
-                  padding: const EdgeInsets.only(bottom: 30),
-                  child: GestureDetector(
-                    onTap: () {
-                      setState(() {
-                        _isSignUpMode = !_isSignUpMode;
-                        // Limpiar campos al cambiar de modo
-                        _nameController.clear();
-                        _emailController.clear();
-                        _passwordController.clear();
-                      });
-                    },
-                    child: Text.rich(
-                      TextSpan(
-                        children: [
-                          TextSpan(
-                            text: _isSignUpMode ? 'Already have an account? ' : 'New User? ',
-                            style: TextStyle(
-                              color: const Color(0xFF6A6A6A),
-                              fontSize: 16,
-                              fontFamily: 'Raleway',
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                          TextSpan(
-                            text: _isSignUpMode ? 'Sign In' : 'Create Account',
-                            style: TextStyle(
-                              color: const Color(0xFF1A1D1E),
-                              fontSize: 16,
-                              fontFamily: 'Raleway',
-                              fontWeight: FontWeight.w500,
-                              decoration: TextDecoration.underline,
-                            ),
-                          ),
-                        ],
+                SizedBox(height: 12),
+                // Recovery Password (solo en modo Sign In)
+                if (!_isSignUpMode)
+                  Align(
+                    alignment: Alignment.centerRight,
+                    child: Text(
+                      'Recovery Password',
+                      textAlign: TextAlign.right,
+                      style: TextStyle(
+                        color: const Color(0xFF707B81),
+                        fontSize: 12,
+                        fontFamily: 'Poppins',
+                        fontWeight: FontWeight.w400,
+                        height: 1.33,
                       ),
-                      textAlign: TextAlign.center,
+                    ),
+                  ),
+                SizedBox(height: 32),
+                // Botón Sign In o Sign Up
+                GestureDetector(
+                  onTap: _isSignUpMode ? _handleSignUp : _handleSignIn,
+                  child: Container(
+                    width: double.infinity,
+                    height: 50,
+                    decoration: ShapeDecoration(
+                      color: const Color(0xFF0D6EFD),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(14),
+                      ),
+                    ),
+                    child: Center(
+                      child: Text(
+                        _isSignUpMode ? 'Create Account' : 'Sign In',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 14,
+                          fontFamily: 'Raleway',
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
                     ),
                   ),
                 ),
-              ),
-            ],
+                SizedBox(height: 40),
+                // New User / Already have account
+                Center(
+                  child: Padding(
+                    padding: const EdgeInsets.only(bottom: 30),
+                    child: GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          _isSignUpMode = !_isSignUpMode;
+                          // Limpiar campos al cambiar de modo
+                          _nameController.clear();
+                          _emailController.clear();
+                          _passwordController.clear();
+                        });
+                      },
+                      child: Text.rich(
+                        TextSpan(
+                          children: [
+                            TextSpan(
+                              text: _isSignUpMode
+                                  ? 'Already have an account? '
+                                  : 'New User? ',
+                              style: TextStyle(
+                                color: const Color(0xFF6A6A6A),
+                                fontSize: 16,
+                                fontFamily: 'Raleway',
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                            TextSpan(
+                              text: _isSignUpMode
+                                  ? 'Sign In'
+                                  : 'Create Account',
+                              style: TextStyle(
+                                color: const Color(0xFF1A1D1E),
+                                fontSize: 16,
+                                fontFamily: 'Raleway',
+                                fontWeight: FontWeight.w500,
+                                decoration: TextDecoration.underline,
+                              ),
+                            ),
+                          ],
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),
